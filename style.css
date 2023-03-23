@@ -1,3 +1,4 @@
+/* * is used for universal tags */
 * {
     box-sizing: border-box;
 }
@@ -5,7 +6,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem; 
-} 
+} /* 1rem = 16px*/
 
 header {
     background-color: pink;
@@ -36,4 +37,19 @@ a {
     text-decoration: none;
     color: inherit;
     margin: 0 0.5rem;
+} /* anchor elements by default do not inherit from the parent, however if we add this value it will */
+
+
+
+
+/* this is a media query which will change my styles when the viewport is 700px or more */
+@media(min-width: 700px){
+    h1{
+        color: red;
+    }
+    .header-container {
+        text-align: left;
+        display: flex;
+        align-items: baseline;
+    }
 }
