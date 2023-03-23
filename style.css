@@ -6,7 +6,15 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem; 
+    font-weight: 400px;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
 } /* 1rem = 16px*/
+
+img {
+    width: 100%;
+    display: block;
+}
 
 header {
     background-color: pink;
@@ -14,12 +22,15 @@ header {
 
 .container {
     width: 90%;
+    max-width: 1024px;
     margin: auto;
 }
 
 .header-container {
     padding: 1.5rem 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -31,6 +42,10 @@ h1 {
 li {
     list-style: none;
     display: inline-block;
+    cursor: pointer;
+}
+li:hover { 
+    color: white;
 }
 
 a {
@@ -39,17 +54,74 @@ a {
     margin: 0 0.5rem;
 } /* anchor elements by default do not inherit from the parent, however if we add this value it will */
 
+main {
+    background-color: brown;
+}
 
+.main-container {
+    padding-top: 1rem;
+}
 
+.hero-image {
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 2rem;
+}
+
+.hero-text {
+    width: 90%;
+    max-width: 60ch;
+    margin: 0 auto 2rem auto;
+}
+
+.cookie-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    margin-bottom: 1rem;
+}
+
+.cookie-img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.img-text {
+    text-align: center;
+}
+
+footer {
+    background-color: pink;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 2rem 0;
+}
 
 /* this is a media query which will change my styles when the viewport is 700px or more */
-@media(min-width: 700px){
+@media(min-width: 700px){ 
+
+    .header-container {
+        text-align: left;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
     h1{
         color: red;
     }
-    .header-container {
-        text-align: left;
-        display: flex;
-        align-items: baseline;
+    .main-container {
+        padding-top: 2rem;
+    }
+    .img-container {
+        width: 30%;
+    }
+    .cookie-section {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
