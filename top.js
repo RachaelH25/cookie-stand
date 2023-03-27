@@ -50,7 +50,6 @@ function displayRating(){
 }
 
 function japanese(){
-// if written as confirm boolean it will affect the h2 aswell, as prompt it outputs the else option.
     let japan= confirm("I am learning Japanese, do you know any Japanese " + user + "?");
     let message;
     
