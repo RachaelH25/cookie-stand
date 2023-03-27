@@ -44,7 +44,7 @@ function displayRating(){
     let rating= prompt("Rate our cookies on a scale of 1-5. How many stars?")
     
     for(let i = 0; i < rating; i ++){
-        output += "<img class=stars src= '/images/star 2.png' alt= 'rating star'>";
+        output += "<img class=stars src= 'images/star 2.png' alt= 'rating star'>";
     }
     return document.write(output);
 }
