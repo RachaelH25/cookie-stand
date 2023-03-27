@@ -11,7 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" /> 
-        <script src="demoscript.js"></script>
+        <!--script src="demoscript.js"></script-->
+        <script src="top.js"></script>
     </head>
     <body>
         <header>
@@ -29,12 +30,21 @@
         <main>
         <div class="container main-container">
             <h2 id="demo">
-                
+                <script>
+                    yourName();
+                </script>
+                    
             </h2>
+            <p>
+                <script>
+                    document.write(timeOfDay());
+                </script>
+            </p>
             <h3 id="japan">
-                
+                <script>
+                    document.write(japanese());
+                </script>
             </h3>
-
             <section class="hero-section">
                 <img class="hero-image" src="/images/cookie.jpg" alt="cookies on paper background">
                 <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, maiores. Iusto, natus eos. Consequatur, accusantium voluptatum ea porro veritatis ad quis eius culpa, modi quisquam excepturi cupiditate fuga quos distinctio?</p>
@@ -59,6 +69,13 @@
                 <p></p>
             </section>
         </div>
+        <p>
+            Thanks for rating our cookies:
+            <script>
+                displayRating();
+            </script>
+        </p>
+
         </main>
         <footer>
             <div class="container footer-container">

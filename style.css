@@ -93,6 +93,13 @@ main {
     text-align: center;
 }
 
+.stars {
+    display: inline-block;
+    max-height: 1rem;
+    max-width: 1rem;
+    margin-right: 1rem;
+}
+
 footer {
     background-color: pink;
 }
